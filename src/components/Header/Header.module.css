@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1em 20em;
+    background: var(--preto);
+}

@@ -1,5 +1,7 @@
+import {Header} from "../../components/Header";
+
 export function Home() {
     return (
-        <h1>Olá mundo!</h1>
+       <Header />
     )
 }
