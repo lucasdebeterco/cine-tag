@@ -3,9 +3,9 @@ import styles from './Footer.module.css';
 export function Footer() {
     return (
         <footer className={styles.footer}>
-            <span className={styles.footerInfo}>
+            <h3>
                 Desenvolvido por Alura.
-            </span>
+            </h3>
         </footer>
     )
 }
