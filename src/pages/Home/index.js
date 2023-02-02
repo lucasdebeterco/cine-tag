@@ -9,7 +9,6 @@ import styles from './Inicio.module.css';
 export function Home() {
     return (
         <>
-            <Header />
             <Banner imagem="home" />
             <Titulo>
                 <h1>Um lugar para guardar seus vídeos e filmes!</h1>
@@ -19,8 +18,6 @@ export function Home() {
                     <Card {...video} key={video.id}></Card>)
                 }
             </section>
-
-            <Footer />
         </>
     )
 }
