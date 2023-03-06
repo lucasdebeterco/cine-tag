@@ -3,12 +3,18 @@ import Banner from "../../components/Banner"
 import Titulo from "../../components/Titulo"
 import {useParams} from "react-router-dom"
 import videos from 'json/db.json'
+import NotFound from "../NotFound";
 
 export default function Player() {
     const params = useParams();
     const video = videos.find((video) => {
         return video.id === Number(params.id);
     })
+
+    if(!video) {
+        return <NotFound />
+    }
+
     return (
         <>
             <Banner imagem="player" />
